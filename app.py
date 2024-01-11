@@ -12,16 +12,12 @@ def calculate():
 
         # Проверка на пустые поля и нечисловые значения
         if not x1 or not x1.isdigit() or not x2 or not x2.isdigit() or not x3 or not x3.isdigit():
-            return render_template('index.html', error='Все поля должны быть заполнены числами')
+            return render_template('index.html', error='Все поля должны быть заполнены не отрицательными ЧИСЛАМИ!')
 
         # Преобразуем значения в числа
         x1 = int(x1)
         x2 = int(x2)
         x3 = int(x3)
-
-        # Проверка на отрицательные значения
-        if x1 < 0 or x2 < 0 or x3 < 0:
-            return render_template('index.html', error='Значения не могут быть отрицательными')
 
         # Сортируем числа в порядке возрастания
         numbers = [x1, x2, x3]

@@ -10,3 +10,10 @@ body {
     padding: 17px;
     margin-top: 50px;
 }
+
+.exit {
+    background-color: red;
+    color: black;
+    border-radius: 10 px;
+    padding: 5px;
+}
