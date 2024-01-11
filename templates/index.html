@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1>Калькулятор</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form method="POST" action="/">
+        <label for="x1">Введите значение x1:</label>
+        <input type="text" id="x1" name="x1" required>
+        <br>
+        <label for="x2">Введите значение x2:</label>
+        <input type="text" id="x2" name="x2" required>
+        <br>
+        <label for="x3">Введите значение x3:</label>
+        <input type="text" id="x3" name="x3" required>
+        <br>
+        <input type="submit" value="Рассчитать">
+    </form>
+</body>
+</html>
