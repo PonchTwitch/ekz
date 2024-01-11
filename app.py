@@ -19,6 +19,10 @@ def calculate():
         x2 = int(x2)
         x3 = int(x3)
 
+        # Проверка на отрицательные значения
+        if x1 < 0 or x2 < 0 or x3 < 0:
+            return render_template('index.html', error='Значения не могут быть отрицательными')
+
         # Сортируем числа в порядке возрастания
         numbers = [x1, x2, x3]
         numbers.sort()
