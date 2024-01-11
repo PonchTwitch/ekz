@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+.menu {
+    background-color: aliceblue;
+    width: 30%;
+    display: inline-block;
+    border-radius: 17px;
+    padding: 17px;
+    margin-top: 50px;
+}
